@@ -1,5 +1,5 @@
 {% set name = "types-croniter" %}
-{% set version = "1.0.11" %}
+{% set version = "1.3.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/types-croniter-{{ version }}.tar.gz
-  sha256: ace63746ab0284eaac3b4fa12c7574acaf5d5fc3abce9c4c6281d1be5cfbd18e
+  sha256: 2cbcd76d2e00db4a4e168d734e56051f3fe71b2ad8f5c84ddcbe1df4261cc529
 
 build:
   number: 0
