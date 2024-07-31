@@ -13,19 +13,19 @@ source:
 build:
   number: 0
   noarch: python
-  script: {{ PYTHON }} -m pip install . -vv
+  script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
 requirements:
   host:
     - pip
     - python >=3.6
+    - setuptools
   run:
     - python >=3.6
 
 test:
   commands:
     - test -f $SP_DIR/croniter-stubs/__init__.pyi
-
 
 about:
   home: https://github.com/python/typeshed
