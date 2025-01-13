@@ -11,19 +11,21 @@ source:
   sha256: 8a7cb10aa0b487c654a10c14d4e99098c92a5d68ee55c7a92a3df095831a6933
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
 requirements:
   host:
     - pip
-    - python >=3.6
+    - python {{ python_min }}
     - setuptools
   run:
-    - python >=3.6
+    - python >={{ python_min }}
 
 test:
+  requires:
+    - python {{ python_min }}
   commands:
     - test -f $SP_DIR/croniter-stubs/__init__.pyi
 
