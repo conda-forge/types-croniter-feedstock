@@ -32,9 +32,9 @@ tests:
         - croniter-stubs/__init__.pyi
   - requirements:
       run:
-        - python ${{ python_min }}.*
-        - mypy
         - croniter
+        - mypy
+        - python ${{ python_min }}.*
     script:
       - mypy -p croniter
 
