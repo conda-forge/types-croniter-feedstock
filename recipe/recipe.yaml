@@ -2,7 +2,7 @@
 schema_version: 1
 
 context:
-  version: "6.2.2.20260402"
+  version: "6.2.2.20260408"
 
 package:
   name: types-croniter
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/t/types-croniter/types_croniter-${{ version }}.tar.gz
-  sha256: 1da2a6a76c81394876a576840829a94f0f43774e696cdeace26bbd2be46a6f00
+  sha256: a28a18908db371654990d30a3fd99856adc5137e475a23dbda4b10dce85525da
 
 build:
   number: 0
